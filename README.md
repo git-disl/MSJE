@@ -1,6 +1,4 @@
-# MSJE: Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval Service
-
-This repository contains the code to train and evaluate models from the paper:  
+MSJE is a prototype system for the paper:  
 _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval Service_
 
 [//]: # ( If you find this code useful, please consider citing:)
@@ -27,6 +25,22 @@ _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval 
 </p>
 
 Given a recipe query which contains the recipe title, a list of ingredients and a sequence of cooking instructions, the goal is to train a statistical model to retrieve the associated image. For the recipe query, we list the top 5 images retrieved by JESR, ACME and our MSJE model.
+
+### MSJE Architecture and example illustration
+<p align="center">
+    <img src="assets/general_framework.png" width="800"/>
+</p>
+
+### Experimental Evaluation Results
+<p align="center">
+    <img src="assets/results.png" width="800"/>
+</p>
+<p align="center">
+    <img src="assets/msje-compare-i2r.png" width="800"/>
+</p>
+<p align="center">
+    <img src="assets/msje-compare-r2i.png" width="800"/>
+</p>
 
 ## Installation
 
@@ -91,4 +105,18 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 
 ## Contact
 
-For any questions or suggestions you can use the issues section or reach us at zhongweixie@gatech.edu.
+We are continuing the development and there is ongoing work in our lab regarding cross-modal retrieval between cooking recipes and food images. For any questions or suggestions you can use the issues section or reach us at zhongweixie@gatech.edu.
+
+
+Lead Developer: Zhongwei Xie, Georgia Institute of Technology
+
+Advisor: Prof. Dr. Ling Liu, Georgia Institute of Technology
+
+
+If you use our code, please cite
+
+[1] Zhongwei Xie, Ling Liu, Yanzhao Wu, et al. Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval Service[J]//IEEE Transactions on Services Computing.
+
+[2] Zhongwei Xie, Ling Liu, Lin Li, et al. Learning Joint Embedding with Modality Alignments for Cross-Modal Retrieval of Recipes and Food Images[C]//Proceedings of the 2021 International Conference on Information and Knowledge Management (CIKM).
+
+[3] Zhongwei Xie, Ling Liu, Yanzhao Wu, et al. Cross-Modal Joint Embedding with Diverse Semantics[C]//2020 IEEE Second International Conference on Cognitive Machine Intelligence (CogMI). IEEE, 2020: 157-166.
